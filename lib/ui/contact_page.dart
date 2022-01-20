@@ -81,7 +81,7 @@ class _ContactPageState extends State<ContactPage> {
       onWillPop: _requestPop,
       child: Scaffold(
         appBar: AppBar(
-            backgroundColor: Colors.lightBlue,
+            backgroundColor: Colors.teal,
             title: Text(_editedContact!.name),
             centerTitle: true),
         floatingActionButton: FloatingActionButton(
@@ -92,7 +92,7 @@ class _ContactPageState extends State<ContactPage> {
               FocusScope.of(context).requestFocus(_nomeFocus);
           },
           child: Icon(Icons.save),
-          backgroundColor: Colors.lightBlue,
+          backgroundColor: Colors.teal,
         ),
         body: SingleChildScrollView(
           padding: EdgeInsets.all(10.0),

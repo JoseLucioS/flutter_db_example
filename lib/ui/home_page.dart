@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
           title: Text("Contatos"),
-          backgroundColor: Colors.lightBlue,
+          backgroundColor: Colors.teal,
           centerTitle: true),
       backgroundColor: Colors.white,
       floatingActionButton: FloatingActionButton(
@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
           _showContactPage();
         },
         child: Icon(Icons.add),
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.teal,
       ),
       body: ListView.builder(
           padding: EdgeInsets.all(10.0),
@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
                         child: TextButton(
                             child: Text("ligar",
                                 style: TextStyle(
-                                    color: Colors.lightBlue, fontSize: 20.0)),
+                                    color: Colors.teal, fontSize: 20.0)),
                             onPressed: () {
                               launch("tel:${contacts[index].phone}");
                               Navigator.pop(context);
@@ -135,7 +135,7 @@ class _HomePageState extends State<HomePage> {
                         child: TextButton(
                             child: Text("editar",
                                 style: TextStyle(
-                                    color: Colors.lightBlue, fontSize: 20.0)),
+                                    color: Colors.teal, fontSize: 20.0)),
                             onPressed: () {
                               Navigator.pop(context);
                               _showContactPage(contact: contacts[index]);
@@ -145,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                         child: TextButton(
                             child: Text("excluir",
                                 style: TextStyle(
-                                    color: Colors.lightBlue, fontSize: 20.0)),
+                                    color: Colors.teal, fontSize: 20.0)),
                             onPressed: () {
                               helper.deleteContact(contacts[index].id);
                               updateList();
